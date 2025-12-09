@@ -1,0 +1,298 @@
+{
+    "common_ports": {
+        "20": {
+            "service": "FTP-DATA",
+            "protocol": "tcp",
+            "description": "FTP Data Transfer"
+        },
+        "21": {
+            "service": "FTP",
+            "protocol": "tcp",
+            "description": "File Transfer Protocol"
+        },
+        "22": {
+            "service": "SSH",
+            "protocol": "tcp",
+            "description": "Secure Shell"
+        },
+        "23": {
+            "service": "Telnet",
+            "protocol": "tcp",
+            "description": "Telnet"
+        },
+        "25": {
+            "service": "SMTP",
+            "protocol": "tcp",
+            "description": "Simple Mail Transfer Protocol"
+        },
+        "53": {
+            "service": "DNS",
+            "protocol": "udp/tcp",
+            "description": "Domain Name System"
+        },
+        "67": {
+            "service": "DHCP",
+            "protocol": "udp",
+            "description": "DHCP Server"
+        },
+        "68": {
+            "service": "DHCP",
+            "protocol": "udp",
+            "description": "DHCP Client"
+        },
+        "69": {
+            "service": "TFTP",
+            "protocol": "udp",
+            "description": "Trivial File Transfer Protocol"
+        },
+        "80": {
+            "service": "HTTP",
+            "protocol": "tcp",
+            "description": "Hypertext Transfer Protocol"
+        },
+        "110": {
+            "service": "POP3",
+            "protocol": "tcp",
+            "description": "Post Office Protocol 3"
+        },
+        "111": {
+            "service": "RPCbind",
+            "protocol": "tcp/udp",
+            "description": "RPC Bind"
+        },
+        "123": {
+            "service": "NTP",
+            "protocol": "udp",
+            "description": "Network Time Protocol"
+        },
+        "135": {
+            "service": "MSRPC",
+            "protocol": "tcp",
+            "description": "Microsoft RPC"
+        },
+        "137": {
+            "service": "NetBIOS-NS",
+            "protocol": "udp",
+            "description": "NetBIOS Name Service"
+        },
+        "138": {
+            "service": "NetBIOS-DGM",
+            "protocol": "udp",
+            "description": "NetBIOS Datagram Service"
+        },
+        "139": {
+            "service": "NetBIOS-SSN",
+            "protocol": "tcp",
+            "description": "NetBIOS Session Service"
+        },
+        "143": {
+            "service": "IMAP",
+            "protocol": "tcp",
+            "description": "Internet Message Access Protocol"
+        },
+        "161": {
+            "service": "SNMP",
+            "protocol": "udp",
+            "description": "Simple Network Management Protocol"
+        },
+        "162": {
+            "service": "SNMPTRAP",
+            "protocol": "udp",
+            "description": "SNMP Trap"
+        },
+        "389": {
+            "service": "LDAP",
+            "protocol": "tcp",
+            "description": "Lightweight Directory Access Protocol"
+        },
+        "443": {
+            "service": "HTTPS",
+            "protocol": "tcp",
+            "description": "HTTP Secure"
+        },
+        "445": {
+            "service": "SMB",
+            "protocol": "tcp",
+            "description": "Server Message Block"
+        },
+        "465": {
+            "service": "SMTPS",
+            "protocol": "tcp",
+            "description": "SMTP Secure"
+        },
+        "514": {
+            "service": "Syslog",
+            "protocol": "udp",
+            "description": "Syslog"
+        },
+        "587": {
+            "service": "SMTP",
+            "protocol": "tcp",
+            "description": "SMTP (submission)"
+        },
+        "636": {
+            "service": "LDAPS",
+            "protocol": "tcp",
+            "description": "LDAP Secure"
+        },
+        "993": {
+            "service": "IMAPS",
+            "protocol": "tcp",
+            "description": "IMAP Secure"
+        },
+        "995": {
+            "service": "POP3S",
+            "protocol": "tcp",
+            "description": "POP3 Secure"
+        },
+        "1433": {
+            "service": "MSSQL",
+            "protocol": "tcp",
+            "description": "Microsoft SQL Server"
+        },
+        "1521": {
+            "service": "Oracle",
+            "protocol": "tcp",
+            "description": "Oracle Database"
+        },
+        "1723": {
+            "service": "PPTP",
+            "protocol": "tcp",
+            "description": "Point-to-Point Tunneling Protocol"
+        },
+        "2049": {
+            "service": "NFS",
+            "protocol": "tcp/udp",
+            "description": "Network File System"
+        },
+        "2082": {
+            "service": "cPanel",
+            "protocol": "tcp",
+            "description": "cPanel"
+        },
+        "2083": {
+            "service": "cPanel",
+            "protocol": "tcp",
+            "description": "cPanel SSL"
+        },
+        "2222": {
+            "service": "SSH",
+            "protocol": "tcp",
+            "description": "SSH (alternate)"
+        },
+        "3306": {
+            "service": "MySQL",
+            "protocol": "tcp",
+            "description": "MySQL Database"
+        },
+        "3389": {
+            "service": "RDP",
+            "protocol": "tcp",
+            "description": "Remote Desktop Protocol"
+        },
+        "5432": {
+            "service": "PostgreSQL",
+            "protocol": "tcp",
+            "description": "PostgreSQL Database"
+        },
+        "5900": {
+            "service": "VNC",
+            "protocol": "tcp",
+            "description": "Virtual Network Computing"
+        },
+        "5985": {
+            "service": "WinRM",
+            "protocol": "tcp",
+            "description": "Windows Remote Management HTTP"
+        },
+        "5986": {
+            "service": "WinRM",
+            "protocol": "tcp",
+            "description": "Windows Remote Management HTTPS"
+        },
+        "6379": {
+            "service": "Redis",
+            "protocol": "tcp",
+            "description": "Redis Database"
+        },
+        "8000": {
+            "service": "HTTP-ALT",
+            "protocol": "tcp",
+            "description": "HTTP Alternate"
+        },
+        "8080": {
+            "service": "HTTP-PROXY",
+            "protocol": "tcp",
+            "description": "HTTP Proxy"
+        },
+        "8443": {
+            "service": "HTTPS-ALT",
+            "protocol": "tcp",
+            "description": "HTTPS Alternate"
+        },
+        "8888": {
+            "service": "HTTP-ALT",
+            "protocol": "tcp",
+            "description": "HTTP Alternate"
+        },
+        "9000": {
+            "service": "Various",
+            "protocol": "tcp",
+            "description": "Various services"
+        },
+        "9090": {
+            "service": "HTTP-ALT",
+            "protocol": "tcp",
+            "description": "HTTP Alternate"
+        },
+        "10000": {
+            "service": "Webmin",
+            "protocol": "tcp",
+            "description": "Webmin"
+        },
+        "27017": {
+            "service": "MongoDB",
+            "protocol": "tcp",
+            "description": "MongoDB Database"
+        },
+        "50000": {
+            "service": "SAP",
+            "protocol": "tcp",
+            "description": "SAP"
+        }
+    },
+    "dangerous_ports": [
+        21,
+        23,
+        69,
+        111,
+        135,
+        139,
+        445,
+        512,
+        513,
+        514,
+        1433,
+        1521,
+        2049,
+        3306,
+        3389,
+        5432,
+        5900,
+        6379,
+        27017
+    ],
+    "web_ports": [
+        80,
+        443,
+        8000,
+        8008,
+        8080,
+        8088,
+        8443,
+        8888,
+        9000,
+        9090,
+        10000
+    ]
+}

@@ -1,0 +1,24 @@
+# SKULL-NetRecon Dependencies
+
+# Core networking
+scapy>=2.5.0
+python-nmap>=0.7.1
+netifaces>=0.11.0
+
+# Terminal UI and formatting
+rich>=13.7.0
+colorama>=0.4.6
+
+# Configuration and data
+pyyaml>=6.0.1
+
+# HTTP and web scanning
+requests>=2.31.0
+urllib3>=2.1.0
+
+# Reporting
+jinja2>=3.1.2
+
+# Utilities
+python-dateutil>=2.8.2
+tqdm>=4.66.1
