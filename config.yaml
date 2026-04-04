@@ -1,0 +1,99 @@
+# SKULL-NetRecon Configuration
+
+# Scanning Configuration
+scanning:
+  # Timeout for connection attempts (seconds)
+  timeout: 2
+  
+  # Number of concurrent threads for scanning
+  threads: 50
+  
+  # Default port ranges
+  port_ranges:
+    quick: "21,22,23,25,53,80,110,111,135,139,143,443,445,993,995,1723,3306,3389,5900,8080"
+    common: "1-1000"
+    full: "1-65535"
+  
+  # Packet rate for SYN scans (packets per second)
+  packet_rate: 1000
+  
+  # Retry attempts for failed connections
+  retries: 1
+
+# Host Discovery
+discovery:
+  # Methods to use (arp, icmp, tcp, udp)
+  methods:
+    - arp
+    - icmp
+    - tcp
+  
+  # TCP ports to probe for discovery
+  tcp_discovery_ports: "80,443,22,21,445"
+  
+  # ICMP echo request timeout
+  icmp_timeout: 1
+
+# Service Detection
+services:
+  # Enable banner grabbing
+  banner_grabbing: true
+  
+  # Banner grab timeout
+  banner_timeout: 3
+  
+  # Enable SSL/TLS analysis
+  ssl_analysis: true
+  
+  # HTTP user agent for web scanning
+  http_user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+# Vulnerability Scanning
+vulnerabilities:
+  # Enable vulnerability detection
+  enabled: true
+  
+  # Check for default credentials
+  check_default_creds: true
+  
+  # Check for known CVEs
+  check_cves: true
+  
+  # SSL/TLS vulnerability checks
+  check_ssl_vulns: true
+
+# Reporting
+reporting:
+  # Output directory for reports
+  output_dir: "./reports"
+  
+  # Default report format (html, json, csv, txt)
+  default_format: "html"
+  
+  # Include screenshots (for web services)
+  include_screenshots: false
+  
+  # Timestamp format for report filenames
+  timestamp_format: "%Y%m%d_%H%M%S"
+
+# Advanced Options
+advanced:
+  # Enable OS fingerprinting
+  os_fingerprint: true
+  
+  # Enable MAC vendor lookup
+  mac_vendor_lookup: true
+  
+  # Enable network mapping
+  network_mapping: true
+  
+  # Verbose logging
+  verbose: false
+  
+  # Debug mode
+  debug: false
+
+# Legal Notice
+legal:
+  disclaimer_shown: false
+  require_acceptance: true

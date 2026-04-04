@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "tool": "SKULL-NetRecon",
+    "version": "1.0.0",
+    "timestamp": "2026-03-24T21:23:43.673987"
+  },
+  "results": {
+    "hosts": [
+      {
+        "ip": "192.168.1.1",
+        "hostname": "_gateway",
+        "mac": null,
+        "vendor": null,
+        "os": {
+          "name": "Linux",
+          "confidence": 60
+        },
+        "ports": [
+          {
+            "port": 53,
+            "state": "open",
+            "service": "domain",
+            "protocol": "tcp"
+          },
+          {
+            "port": 80,
+            "state": "open",
+            "service": "http",
+            "protocol": "tcp"
+          },
+          {
+            "port": 443,
+            "state": "open",
+            "service": "https",
+            "protocol": "tcp"
+          }
+        ],
+        "vulnerabilities": []
+      }
+    ],
+    "metadata": {
+      "total_hosts": 1,
+      "total_ports": 3,
+      "total_vulns": 0
+    }
+  }
+}
